@@ -64,7 +64,8 @@
                                     <td th:text="${user.role.name}"></td>
                                     <td>
                                         <a th:href="@{/admin/user/{id}(id=${user.id})}" class="btn btn-success">View</a>
-                                        <a th:href="@{/admin/user/update/{id}(id=${user.id})}" class="btn btn-warning mx-2">Update</a>
+                                        <a th:href="@{/admin/user/update/{id}(id=${user.id})}"
+                                           class="btn btn-warning mx-2">Update</a>
                                         <a th:href="@{/admin/user/delete/{id}(id=${user.id})}" class="btn btn-danger">Delete</a>
                                     </td>
                                 </tr>
