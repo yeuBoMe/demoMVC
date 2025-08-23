@@ -30,7 +30,8 @@ public class SendEmailService {
             String receiverAddress,
             String receiverPhone,
             String orderDetails,
-            double totalPrice) throws IOException {
+            double totalPrice
+    ) throws IOException {
         Email from = new Email(fromEmail); // Email gửi từ SendGrid
         Email to = new Email(toEmail); // Email người nhận
         String subject = "Cảm ơn bạn đã đặt hàng [Đơn hàng #" + System.currentTimeMillis() + "]";

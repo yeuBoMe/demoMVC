@@ -21,8 +21,8 @@ public class OrderService {
     private final OrderDetailRepository orderDetailRepository;
 
     public OrderService(
-        OrderRepository orderRepository,
-        OrderDetailRepository orderDetailRepository
+            OrderRepository orderRepository,
+            OrderDetailRepository orderDetailRepository
     ) {
         this.orderRepository = orderRepository;
         this.orderDetailRepository = orderDetailRepository;
@@ -34,7 +34,7 @@ public class OrderService {
                 .orElseThrow(() -> new NoSuchElementException("Order with id " + id + " not found!"));
     }
 
-        public Order handleSaveOrder(Order order) {
+    public Order handleSaveOrder(Order order) {
         return this.orderRepository.save(order);
     }
 
